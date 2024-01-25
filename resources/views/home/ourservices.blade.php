@@ -16,6 +16,13 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="home/css/styles.css" rel="stylesheet" />
+
+        <style type="text/css">
+        .img_size{
+        height: 300px;
+        width: 300px;
+    }
+    </style>
     </head>
     <body id="page-top">
         @include('home.header')
@@ -32,7 +39,7 @@
                     <div class="col-md-4">
 
                             
-                                <img class="rounded border border-5" alt="image cap" src="image/{{$service->image}}" />
+                                <img class="img_size" alt="image cap" src="image/{{$service->image}}" />
                             
                        
                         <h4 class="my-3">{{$service->name}}</h4>

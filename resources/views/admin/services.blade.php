@@ -59,25 +59,35 @@
 
             <div class="div_center">
                 <h2 class="h2_font">Add Services</h2>
-                <form action="{{url('/add_services')}}" method="POST" enctype="multipart/form-data">
+                <div class="card card-info">
+                <form action="{{url('/add_services')}}" method="POST" enctype="multipart/form-data" class="form-horizontal">
                     @csrf
-                    <div class="div_design">
-                    <label>Services Title: </label>
-                    <input type="text" name="name" placeholder="Write the title" class="input_color">
-                    </div>
-
-                    <div class="div_design">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <div class="col-sm-10">
+                                <label for="name">Services Title:</label>
+                                <input type="text" class="form-control" placeholder="Name" required name="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        <div class="col-sm-10">
                     <label>Services Description: </label>
-                    <input type="text" name="detail" placeholder="Write the description" class="input_color">
+                    <input type="text" name="detail" placeholder="Write the description" class="form-control">
                     </div>
-
-                    <div class="div_design">
+                        </div>
+                        <div class="form-group">
+                        <div class="div_design">
                     <label>Services Image: </label>
-                    <input type="file" name="image">
+                    <input type="file" name="image" class="form-control">
                     </div>
-
+                        </div>
+                    </div>
+                    <div class="card-footer">
                     <input type="submit" class="btn btn-primary"name="submit" value="Add Services">
+                    </div>
                 </form>
+            </div>
+                
             </div>
             
             

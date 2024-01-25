@@ -25,7 +25,7 @@
             <div class="card">
                 <div class="card-header">
                     <h3 class="cart-title">
-                        Add a Menu Item
+                        Add a Team Member
                     </h3>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Add Menu Item</button>
+                        <button type="submit" class="btn btn-primary">Add </button>
                     </div>
                 </form>
             </div>

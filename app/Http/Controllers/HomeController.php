@@ -10,11 +10,13 @@ use App\Models\Services;
 use App\Models\Team;
 use App\Models\Menu;
 use App\Models\Payment;
+use Illuminate\Pagination\Paginator;
 
 class HomeController extends Controller
 {
     public function index(){
-        $programs = Programs::all();
+
+        $programs = Programs::paginate(3);
         $services = Services::all();
         $teams = Team::all();
         $menu = Menu::all();
@@ -22,11 +24,6 @@ class HomeController extends Controller
         view()->share('menu',$menu);
         return view('home.userpage',compact('programs','services','teams','menu'));
     }
-
-    // public function modal(){
-    //     $programs = Programs::all();
-    //     return view('home.program_modal',compact('programs'));
-    // }
 
 
     
