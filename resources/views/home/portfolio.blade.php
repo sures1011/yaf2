@@ -12,9 +12,9 @@
   <div class="card-body">
     <h5 class="card-title">{{$program->name}}</h5>
     <p class="card-text">{{$program->detail}}</p>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  More
-</button>
+    <a href="{{url('/contact_us')}}" class="btn btn-primary">More</a>
+    
+    
 
 
 

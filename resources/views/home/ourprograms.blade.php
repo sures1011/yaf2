@@ -24,7 +24,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Programs</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">PUTTING YOUTH AT THE FRONT OF CHANGE AND DEVELOPMENT FOR THEMSELVES AND THEIR COMMUNITY</h3>
                 </div>
                 <div class="row">
                     @foreach($programs as $programs)
@@ -34,33 +34,9 @@
   <div class="card-body">
     <h5 class="card-title">{{$programs->name}}</h5>
     <p class="card-text">{{$programs->detail}}</p>
-    <a href="{{url('programs_detalis',$programs->id)}}" class="btn btn-primary">More</a>
+    <a href="{{url('/contact_us')}}" class="btn btn-primary">More</a>
     
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-      <div class="modal-header">
-        <h5 class="modal-title">{{$programs->title}}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-        <h5 class="modal-title" id="exampleModalLongTitle">{{$programs->description}}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
-</div>
+
   </div>
 </div>
 
